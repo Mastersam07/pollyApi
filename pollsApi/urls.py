@@ -24,6 +24,6 @@ schema_view = get_swagger_view(title='Polls API')
 urlpatterns = [
     path('api/', include('polls.urls')),
     path('master/', admin.site.urls),
-    path(r'swagger-docs/', schema_view),
+    path(r'', schema_view),
     path(r'docs/', include_docs_urls(title='Polls API')),
 ]
